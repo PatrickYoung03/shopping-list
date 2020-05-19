@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
+.App {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "input"
+    "list"
+    "clear";
+  grid-template-rows: 5% 5% 40% 10%;
+  justify-content: center;
+  text-align: center;
+  font-family: "Indie Flower";
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vw;
+  font-size: 1em;
+  background-image: url("https://previews.123rf.com/images/paladin12/paladin121901/paladin12190100221/116346328-crumpled-brown-background-paper-texture.jpg");
+}
+
+.title {
+  grid-area: title;
+}
+
+.input {
+  grid-area: input;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.list {
+  height: 100%;
+  width: 100%;
+  background: whitesmoke;
+  border-radius: 7px;
+  border: 1px solid black;
+  overflow: scroll;
+  max-height: 100%;
+}
